@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 public class Sueldos {
     
     public void sueldos(){
-        int trabTotales;
+        int trabTotales=0;
         int sueldo;
         int trabmas1000=0;
         int trabmenos1000=0;
@@ -31,11 +31,12 @@ public class Sueldos {
           
             if(sueldo>=1000&&sueldo<=1750){
            trabmas1000++;
-                
+           trabTotales++;    
              
                        
              }if (sueldo>0&&sueldo<1000){
-                trabmenos1000++;   }
+                trabmenos1000++;
+                trabTotales++; }
              System.out.println(" os traballadores de mais de 1000 e son "+trabmas1000+" e os traballadores "
                      + " de menos de 1000 son "+trabmenos1000);
             
